@@ -1,0 +1,62 @@
+/* Write your CSS here */
+.inner-container {
+  background-color: #150b3e;
+}
+.top-section {
+  display: flex;
+  justify-content: flex-start;
+}
+.initial-name {
+  background-color: #c7d2fe;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 0px;
+  height: 60px;
+  width: 60px;
+  color: #7c3aed;
+  font-family: 'Roboto';
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.name {
+  font-family: 'Roboto';
+  font-size: 22px;
+  color: #d4d2db;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.balance-heading {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #585076;
+}
+.balance {
+  color: #d4d2db;
+  font-size: 28px;
+}
+.rupees {
+  color: #585076;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+}
+.withdraw {
+  font-family: 'Roboto';
+  font-size: 22px;
+  color: #d4d2db;
+  padding-bottom: 20px;
+}
+.currency-rupees {
+  color: #585076;
+  font-family: 'Roboto';
+  font-size: 18px;
+  padding-bottom: 20px;
+}
