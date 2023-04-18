@@ -1,7 +1,8 @@
 // Write your code here
+import './index.css'
+
 const DenominationItem = props => {
-  const {denominationList, decrementValue} = props
-  const {value} = denominationList
+  const {value, decrementValue} = props
 
   const onDecrementValue = () => {
     decrementValue(value)

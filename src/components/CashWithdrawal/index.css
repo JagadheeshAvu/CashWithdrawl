@@ -1,10 +1,25 @@
 /* Write your CSS here */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 25px;
   background-color: #150b3e;
+  border-radius: 15px;
+  width: 400px;
+  height: 520px;
 }
 .top-section {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .initial-name {
   background-color: #c7d2fe;
@@ -59,4 +74,13 @@
   font-family: 'Roboto';
   font-size: 18px;
   padding-bottom: 20px;
+}
+.unordered-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-top: -5px;
+  margin-left: -40px;
 }

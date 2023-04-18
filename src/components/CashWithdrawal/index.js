@@ -13,7 +13,7 @@ class CashWithdrawal extends Component {
   }
 
   render() {
-    const {denominationList} = this.props
+    const {denominationsList} = this.props
     const {balance} = this.state
     return (
       <div className="container">
@@ -23,24 +23,25 @@ class CashWithdrawal extends Component {
             <h2 className="name">Sarah Williams</h2>
           </div>
           <div className="middle-section">
-            <h1 className="balance-heading">Your Balance</h1>
+            <p className="balance-heading">Your Balance</p>
             <div>
               <p className="balance">{balance}</p>
               <p className="rupees">In Rupees</p>
             </div>
           </div>
-          <h1 className="withdraw">Withdraw</h1>
-          <h1 className="currency-rupees">CHOOSE SUM IN (RUPEES)</h1>
+          <p className="withdraw">Withdraw</p>
+          <p className="currency-rupees">CHOOSE SUM (IN RUPEES)</p>
+
+          <ul className="unordered-list">
+            {denominationsList.map(eachValue => (
+              <DenominationItem
+                decrementValue={this.decrementValue}
+                key={eachValue.id}
+                value={eachValue.value}
+              />
+            ))}
+          </ul>
         </div>
-        <ul>
-          {denominationList.map(eachValue => (
-            <DenominationItem
-              decrementValue={this.eachValue}
-              key={eachValue.id}
-              value={eachValue.value}
-            />
-          ))}
-        </ul>
       </div>
     )
   }
